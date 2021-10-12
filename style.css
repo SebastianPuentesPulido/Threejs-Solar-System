@@ -1,0 +1,64 @@
+canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.text-awesome {
+    text-shadow: rgb(255, 118, 117) 10px 12px 5px;
+    background: -webkit-linear-gradient(90deg, #f938ac, #FBDF02);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+main {
+    width: 400px;
+    height: 430px;
+    position: absolute;
+    opacity: 0.9;
+    background-color: #222f3e;
+    color: aliceblue;
+    background-image: url(https://i.pinimg.com/originals/c7/e9/a8/c7e9a8d36d1512bea830f2f8a8a1aa6e.gif);
+    font-family: SpaceMono Nerd Font;
+    border-radius: 10%;
+    border: 4px solid #a29bfe;
+    animation-name: ilution;
+    animation-iteration-count: infinite;
+}
+
+h1 {
+    text-shadow: 10px 11px 18px rgb(116, 185, 255);
+    font-size: 40px;
+}
+
+.typed {
+    text-shadow: rgb(108, 92, 231) 4px 10px;
+}
+
+.galaxy-text {
+    font-size: 15px;
+    text-shadow: 10px 11px 2px rgb(69, 231, 231);
+}
+
+.names {
+    /* pendiente para añadir clase a los nombre mi rey */
+}
+
+@keyframes ilution {
+    to {
+        border: 4px solid #ff9f43;
+    }
+    from {
+        border: 4px solid #55efc4;
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        display: block;
+        width: 200px;
+        height: 550px;
+        font-size: 12px;
+        text-align: start;
+    }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "webgl-threejs",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.6.2"
+  },
+  "dependencies": {
+    "three": "^0.132.2",
+    "typed.js": "^2.0.12"
+  }
+}
