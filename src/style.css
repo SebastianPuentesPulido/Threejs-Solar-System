@@ -13,17 +13,18 @@ canvas {
 
 main {
     width: 400px;
-    height: 430px;
+    height: 480px;
     position: absolute;
     opacity: 0.9;
     background-color: #222f3e;
     color: aliceblue;
-    background-image: url(https://i.pinimg.com/originals/c7/e9/a8/c7e9a8d36d1512bea830f2f8a8a1aa6e.gif);
+    background-image: url(https://c.tenor.com/_SDVHNWIqOcAAAAC/jupiter-galaxy.gif);
     font-family: SpaceMono Nerd Font;
     border-radius: 10%;
     border: 4px solid #a29bfe;
-    animation-name: ilution;
-    animation-iteration-count: infinite;
+    animation: ilution 2s infinite;
+    text-align: center;
+    margin: 10px;
 }
 
 h1 {
@@ -40,15 +41,26 @@ h1 {
     text-shadow: 10px 11px 2px rgb(69, 231, 231);
 }
 
-.names {
-    /* pendiente para añadir clase a los nombre mi rey */
+.button-info {
+    background-color: #34e7e4;
+    width: 120px;
+    height: 30px;
+    border: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.button-info:active {
+    background-color: #ff9f43;
+    cursor: pointer;
+    transform: scale(0.95);
 }
 
 @keyframes ilution {
-    to {
+    from {
         border: 4px solid #ff9f43;
     }
-    from {
+    to {
         border: 4px solid #55efc4;
     }
 }
@@ -57,7 +69,7 @@ h1 {
     main {
         display: block;
         width: 200px;
-        height: 550px;
+        height: 500px;
         font-size: 12px;
         text-align: start;
     }
