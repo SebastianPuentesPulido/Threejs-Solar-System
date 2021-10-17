@@ -1,6 +1,8 @@
 name: 'SolarSystem Actions'
 description: 'awesome description for my firs test'
 
+on: [push]
+
 jobs:
   build:
 
