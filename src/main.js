@@ -43,7 +43,7 @@ const material = new THREE.MeshStandardMaterial({
 const sphere = new THREE.Mesh(geometry, material);
 scene.add(sphere);
 
-sphere.position.set(100, 52, 25);
+sphere.position.set(120, 52, 25);
 
 // Sun
 const SunTexture = new THREE.TextureLoader().load("./images/sun.jpg");
@@ -53,6 +53,7 @@ const Sun = new THREE.Mesh(
 );
 scene.add(Sun);
 Sun.position.set(9, 9, 9);
+
 //
 
 // Mercury planet
@@ -63,7 +64,7 @@ const mercury = new THREE.Mesh(
     })
 );
 scene.add(mercury);
-mercury.position.set(40, 43, 15);
+mercury.position.set(60, 43, 15);
 
 // Venus
 const venus = new THREE.Mesh(
@@ -73,7 +74,7 @@ const venus = new THREE.Mesh(
     })
 );
 scene.add(venus);
-venus.position.set(65, 48, 20);
+venus.position.set(90, 48, 20);
 
 // Mars Planet
 const textureMars = new THREE.TextureLoader().load("./images/Mars.jpg");
@@ -96,8 +97,8 @@ const ambientLight = new THREE.AmbientLight(0xffffff);
 scene.add(pointLight, ambientLight);
 
 const lightHelper = new THREE.PointLightHelper(pointLight);
-const gridHelper = new THREE.GridHelper(900, 50);
-scene.add(lightHelper, gridHelper);
+// const gridHelper = new THREE.GridHelper(900, 50);
+scene.add(lightHelper);
 
 const controls = new OrbitControls(camera, renderer.domElement);
 
@@ -182,7 +183,6 @@ animate();
 
 function animate() {
     requestAnimationFrame(animate);
-
     Sun.rotation.y += -0.01;
     controls.update();
     renderer.render(scene, camera);
@@ -202,4 +202,5 @@ function animate() {
     Mars.rotation.x += 0.01;
     Mars.rotation.y += 0.01;
     Mars.rotation.z += 0.01;
+
 }
